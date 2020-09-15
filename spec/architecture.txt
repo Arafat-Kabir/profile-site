@@ -1,0 +1,8 @@
+
+- All the requests are received by index.php then it serves
+  the appropriate page/contents. This way urls are separate
+  from the original file-names.
+- Specific Pages are requested through a GET variable named "p".
+- index.php reads the site global settings and sets appropriate
+  variables for the requested pages.
+
