@@ -6,9 +6,11 @@
     "author": "MD Arafat Kabir, Dusan Petranovic, and Yarui Peng",
     "book"  : "International Conference on Computer-Aided Design",
     "year"  : 2020,
-    "url"   : null,
     "pdf"   : "https://e3da.csce.uark.edu/pub/doc/2020/M.A.Kabir-Conf.IEEE.ICCAD-2020.pdf",
-    "status": "published"
+    "status": "published",
+    "slides": "https://e3da.csce.uark.edu/media/video/Publication/2020/M.A.Kabir-Conf.IEEE.ICCAD-2020.pptx.pdf",
+    "video" : "https://e3da.csce.uark.edu/media/video/?file=M.A.Kabir-Conf.IEEE.ICCAD-2020",
+    "ieee"  : "https://ieeexplore.ieee.org/document/9256799"
 },
 
 {
@@ -16,9 +18,11 @@
     "author": "Rakibul Islam Chowdhury; Arafat Kabir Sun; Azwad Tamir; Celia Shahnaz; Shaikh Anowarul Fattah",
     "book"  : "IEEE Region 10 Humanitarian Technology Conference (R10-HTC)",
     "year"  : 2017,
-    "url"   : "https://ieeexplore.ieee.org/document/8289087",
     "pdf"   : null,
-    "status": "published"
+    "status": "published",
+    "slides": null,
+    "video" : null,
+    "ieee"   : "https://ieeexplore.ieee.org/document/8289087"
 }
 
 ]

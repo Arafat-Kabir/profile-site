@@ -65,33 +65,59 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <!-- Section: Publications -->
     <div class="w3-container w3-card-2 w3-white">
         <h2 class="<?php echo $color_icon; ?> w3-padding-16"><i class="fa fa-file-text-o fa-fw w3-margin-right w3-xxlarge <?php echo $color_icon; ?>"></i>Publications</h2>
+        <table class="w3-table w3-striped">
+        <!-- Rows -->
         <?php
             $myfile  = fopen($path_pubJson, "r") or die("Unable to open file: $path_pubJson!");
-			$jsonPub = fread($myfile,filesize($path_pubJson));
-			$arrPapers  = json_decode($jsonPub, true);
+            $jsonPub = fread($myfile,filesize($path_pubJson));
+            $arrPapers  = json_decode($jsonPub, true);
+            $lstCount = count($arrPapers);    // start at +1
+
             foreach($arrPapers as $paper) {
                 $title  = $paper['title'];
                 $author = $paper['author'];
                 $book   = $paper['book'];
                 $year   = $paper['year'];
-                $url    = $paper['url'];
                 $pdf    = $paper['pdf'];
                 $status = $paper['status'];
+                $slides = $paper['slides'];
+                $video  = $paper['video'];
+                $ieee   = $paper['ieee'];
                 
-                echo "<p style='font-size:1.1em'>\n";
+                // write the a row
+                echo "\n<tr>\n";
+                echo "<td> <span class=\"w3-badge $color_listIndex\">$lstCount</span> </td>\n";
+                $lstCount--;
+                echo "<td style='font-size:1.1em'>\n";
                 // Author
                 echo "$author, \n";
                 // Title
-                echo "<b style='font-size:1.1em'>\n";
-                echo "<a href='$url' target='_blank' style='text-decoration: none; color: #3355aa'>\n\"$title\",\n</a>\n";
+                echo "<b style='font-size:1.1em' class='$color_textHi'>\n";
+                echo "$title,\n";
                 echo "</b>\n";
                 // Book or conference
                 echo "$book, ";
                 echo "$year.\n";
-                echo "</p>\n\n";
+                // External URLs
+                echo "<br>\n";
+                echo "<b style='font-size:1.1em'>\n";
+                if (!is_null($pdf))
+                    echo "<a href='$pdf' target='_blank' class='$color_url'>\nPaper\n<i class='fa fa-external-link-square fa-fw w3-margin-right'></i>\n</a>\n";
+                if (!is_null($slides))
+                    echo "<a href='$slides' target='_blank' class='$color_url'>\nSlides\n<i class='fa fa-external-link-square fa-fw w3-margin-right'></i>\n</a>\n";
+                if (!is_null($video))
+                    echo "<a href='$video' target='_blank' class='$color_url'>\nPresentation\n<i class='fa fa-external-link-square fa-fw w3-margin-right'></i>\n</a>\n";
+                if (!is_null($ieee))
+                    echo "<a href='$ieee' target='_blank' class='$color_url'>\nIEEE\n<i class='fa fa-external-link-square fa-fw w3-margin-right'></i>\n</a>\n";
+                echo "</b>\n";
+                // end the row
+                echo "</td>\n";
+                echo "</tr>\n";
 
             }
         ?>
+        </table>
+        <br>
     </div>
     <!-- End of Publications -->
 
