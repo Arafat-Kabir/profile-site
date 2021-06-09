@@ -12,4 +12,6 @@ $color_url = "w3-text-teal";
 $color_urlBtn = "w3-teal";
 // text highlight color
 $color_textHi = "w3-text-teal";
+$color_journalTitle = "w3-text-red";
+$color_journalIndex = "w3-red";
 ?>

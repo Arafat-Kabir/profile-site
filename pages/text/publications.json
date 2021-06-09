@@ -1,5 +1,46 @@
 [
 
+{
+    "title" : "Holistic Chiplet-Package Co-Optimization for Agile Custom 2.5D Design",
+    "author": "MD Arafat Kabir and Yarui Peng",
+    "book"  : "IEEE Transactions on Components, Packaging, and Manufacturing Technology",
+    "year"  : 2021,
+    "pdf"   : "https://e3da.csce.uark.edu/pub/doc/2021/M.A.Kabir-IEEE.TCPMT-2021.pdf",
+    "status": "published",
+    "type"  : "journal",
+    "note"  : null,
+    "slides": null,
+    "video" : null,
+    "ieee"  : "https://ieeexplore.ieee.org/document/9389804"
+},
+
+{
+    "title" : "Holistic and In-Context Design Flow for 2.5D Chiplet-Package Interaction Co-Optimization",
+    "author": "MD Arafat Kabir, Weishiun Hung, Tsung-Yi Ho, and Yarui Peng",
+    "book"  : "International Symposium on VLSI Design, Automation and Test",
+    "year"  : 2021,
+    "pdf"   : "https://e3da.csce.uark.edu/pub/doc/2021/M.A.Kabir-Misc.Conf.VLSI-DAT-2021.pdf",
+    "status": "published",
+    "type"  : "conf",
+    "note"  : "Invited Paper",
+    "slides": "https://e3da.csce.uark.edu/media/video/Publication/2021/M.A.Kabir-Misc.Conf.VLSI-DAT-2021.pptx.pdf",
+    "video" : "https://e3da.csce.uark.edu/media/video/?file=M.A.Kabir-Misc.Conf.VLSI-DAT-2021",
+    "ieee"  : "https://ieeexplore.ieee.org/document/9427353"
+},
+
+{
+    "title" : "Cross-Boundary Inductive Timing Optimization for 2.5D Chiplet-Package Co-Design",
+    "author": "MD Arafat Kabir, Dusan Petranovic, and Yarui Peng",
+    "book"  : "ACM Great Lakes Symposium on VLSI",
+    "year"  : 2021,
+    "pdf"   : "https://e3da.csce.uark.edu/pub/doc/2021/M.A.Kabir-Conf.ACM.GLSVLSI-2021.pdf",
+    "status": "accepted",
+    "type"  : "conf",
+    "note"  : null,
+    "slides": "https://e3da.csce.uark.edu/media/video/Publication/2021/M.A.Kabir-Conf.ACM.GLSVLSI-2021.pptx.pdf",
+    "video" : "https://e3da.csce.uark.edu/media/video/?file=M.A.Kabir-Conf.ACM.GLSVLSI-2021",
+    "ieee"  : null
+},
 
 {
     "title" : "Coupling Extraction and Optimization for Heterogeneous 2.5D Chiplet-Package Co-Design",
@@ -8,9 +49,39 @@
     "year"  : 2020,
     "pdf"   : "https://e3da.csce.uark.edu/pub/doc/2020/M.A.Kabir-Conf.IEEE.ICCAD-2020.pdf",
     "status": "published",
+    "type"  : "conf",
+    "note"  : null,
     "slides": "https://e3da.csce.uark.edu/media/video/Publication/2020/M.A.Kabir-Conf.IEEE.ICCAD-2020.pptx.pdf",
     "video" : "https://e3da.csce.uark.edu/media/video/?file=M.A.Kabir-Conf.IEEE.ICCAD-2020",
     "ieee"  : "https://ieeexplore.ieee.org/document/9256799"
+},
+
+{
+    "title" : "Holistic 2.5D Chiplet Design Flow: A 65nm Shared-Block Microcontroller Case Study",
+    "author": "MD Arafat Kabir and Yarui Peng",
+    "book"  : "IEEE International System-on-Chip Conference",
+    "year"  : 2020,
+    "pdf"   : "https://e3da.csce.uark.edu/pub/doc/2020/M.A.Kabir-Conf.IEEE.SoCC-2020.pdf",
+    "status": "published",
+    "type"  : "conf",
+    "note"  : null,
+    "slides": "https://e3da.csce.uark.edu/media/video/Publication/2020/M.A.Kabir-Conf.IEEE.SoCC-2020.pptx.pdf",
+    "video" : "https://e3da.csce.uark.edu/media/video/?file=M.A.Kabir-Conf.IEEE.SoCC-2020",
+    "ieee"  : null
+},
+
+{
+    "title" : "Chiplet-Package Co-Design For 2.5D Systems Using Standard ASIC CAD Tools",
+    "author": "MD Arafat Kabir and Yarui Peng",
+    "book"  : "Asia and South Pacific Design Automation Conference",
+    "year"  : 2020,
+    "pdf"   : "https://e3da.csce.uark.edu/pub/doc/2020/M.A.Kabir-Conf.IEEE.ASP-DAC-2020.pdf",
+    "status": "published",
+    "type"  : "conf",
+    "note"  : null,
+    "slides": "https://e3da.csce.uark.edu/media/video/Publication/2020/M.A.Kabir-Conf.IEEE.ASP-DAC-2020.pptx.pdf",
+    "video" : null,
+    "ieee"  : "https://ieeexplore.ieee.org/document/9045734"
 },
 
 {
@@ -20,6 +91,8 @@
     "year"  : 2017,
     "pdf"   : null,
     "status": "published",
+    "type"  : "conf",
+    "note"  : null,
     "slides": null,
     "video" : null,
     "ieee"   : "https://ieeexplore.ieee.org/document/8289087"

@@ -80,24 +80,39 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                 $year   = $paper['year'];
                 $pdf    = $paper['pdf'];
                 $status = $paper['status'];
+                $type   = $paper['type'];
+                $note   = $paper['note'];
                 $slides = $paper['slides'];
                 $video  = $paper['video'];
                 $ieee   = $paper['ieee'];
                 
+                // Select difference colors for journal and conference
+                if ($type=="journal") {
+                    $tcol_index = $color_journalIndex;
+                    $tcol_title = $color_journalTitle;
+                }
+                else {
+                    $tcol_index = $color_listIndex;
+                    $tcol_title = $color_textHi;
+                }
                 // write the a row
                 echo "\n<tr>\n";
-                echo "<td> <span class=\"w3-badge $color_listIndex\">$lstCount</span> </td>\n";
+                // write list index
+                echo "<td> <span class=\"w3-badge $tcol_index\">$lstCount</span> </td>\n";
                 $lstCount--;
                 echo "<td style='font-size:1.1em'>\n";
                 // Author
                 echo "$author, \n";
                 // Title
-                echo "<b style='font-size:1.1em' class='$color_textHi'>\n";
+                echo "<b style='font-size:1.1em' class='$tcol_title'>\n";
                 echo "$title,\n";
                 echo "</b>\n";
+                // status
+                if ($status == "accepted") echo "($status) ";
                 // Book or conference
                 echo "$book, ";
-                echo "$year.\n";
+                if (is_null($note)) echo "$year.\n";
+                else                echo "$year, <b>$note</b>.";
                 // External URLs
                 echo "<br>\n";
                 echo "<b style='font-size:1.1em'>\n";
