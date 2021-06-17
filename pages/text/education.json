@@ -1,0 +1,44 @@
+[
+
+{
+    "inst"    : "University of Arkansas",
+    "instUrl" : "https://www.uark.edu/",
+    "start"   : "2018",
+    "end"     : "Present",
+    "logo"    : "pages/data/uark-logo.jpg",
+    "desc"    : [
+		"<b>PhD Student, Computer Engineering</b><br>",
+		"Advisor: Dr. Yarui Peng<br>",
+		"Energy-Efficient Electronics and Design Automation (E3DA) Lab",
+		"<a href='https://e3da.csce.uark.edu/people/#Ph.D.%20Students' target='_blank'><i class='fa fa-external-link-square fa-fw w3-margin-right w3-text-teal'></i></a></h5>"
+	]
+},
+
+{
+    "inst"    : "Bangladesh University of Engineering and Technology (BUET)",
+    "instUrl" : "https://www.buet.ac.bd/",
+    "start"   : "2013",
+    "end"     : "2017",
+    "logo"    : "pages/data/buet-logo.png",
+    "desc"    : [
+		"<b>B.Sc.Engg.(Electrical and Electronic)</b><br>",
+		"Major: Elecronics<br>",
+        "Minor: Power<br>"
+	]
+},
+
+{
+    "inst"    : "Rajshahi Cadet College",
+    "instUrl" : "https://en.wikipedia.org/wiki/Rajshahi_Cadet_College",
+    "start"   : "2006",
+    "end"     : "2012",
+    "logo"    : "pages/data/rcc-logo.gif",
+    "desc"    : [
+		"<b>Higher Secondary School Certificate (H.S.C Science Group), 2012</b><br>",
+		"<b>Secondary School Certificate (S.S.C Science Group), 2010</b><br>",
+		"Rajshahi Board<br>"
+	]
+}
+
+
+]

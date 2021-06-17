@@ -45,11 +45,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                 <p><i class="fa fa-phone fa-fw w3-margin-right w3-large <?php echo $color_icon; ?>"></i>+1 (479) 301 1293</p>
                 <p><i class="fa fa-phone fa-fw w3-margin-right w3-large <?php echo $color_icon; ?>"></i>+8801728640025</p>
             </div>
+            <span style="display:block; height: 20px;"></span>
         </div>
         <!-- Right Column -->
         <div class="w3-twothird">
             <div class="w3-container w3-margin-bottom w3-animate-bottom">
                 <h2 class="<?php echo $color_icon; ?> w3-padding-16"><i class="fa fa-user-circle-o fa-fw w3-margin-right w3-xxlarge <?php echo $color_icon; ?>"></i>About</h2>
+                <hr>
                 <div class="w3-container" style="text-align: justify; font-size: 1.1em">
                     <?php include "$path_pageText/home-about.php"; ?>
                 </div>
@@ -59,12 +61,59 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <!-- End of About -->
 
 
-    <span style="display: block; height: 15px;"></span>
+    <span style="display: block; height: 20px;"></span>
+
+
+    <!-- Section: Education -->
+    <div class="w3-container w3-card-2 w3-white">
+        <h2 class="<?php echo $color_icon; ?> w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge <?php echo $color_icon; ?>"></i>Education</h2>
+        <?php
+            $myfile  = fopen($path_eduJson, "r") or die("Unable to open file: $path_pubJson!");
+            $jsonEdu = fread($myfile,filesize($path_eduJson));
+            $arrInst = json_decode($jsonEdu, true);
+            $lstCount = count($arrPapers);    // start at +1
+
+            foreach($arrInst as $instt) {
+                $inst    = $instt['inst'];
+                $instUrl = $instt['instUrl'];
+                $start   = $instt['start'];
+                $end     = $instt['end'];
+                $logo    = $instt['logo'];
+                $desc    = implode("\n      ", $instt['desc']);
+                
+                // write the a row
+                echo "\n<hr>\n";
+                echo "\n<div class='w3-row'>\n";
+
+                echo "  <div class='w3-container w3-col' style='width:200px'>\n";
+                echo "    <img src='$logo' class='w3-image'>\n";
+                echo "  </div>\n";
+
+                echo "  <div class='w3-container w3-rest'>\n";
+                echo "    <h5 class=''><b>$inst</b>\n";
+                echo "    <a href='$instUrl' target='_blank'><i class='fa fa-external-link-square fa-fw w3-margin-right $color_icon'></i></a></h5>\n";
+                echo "    <h6 class='$color_icon'><i class='fa fa-calendar fa-fw w3-margin-right'></i>$start - $end</h6>\n";
+                echo "    <p>\n";
+                echo "      $desc\n";
+                echo "    </p>\n";
+                echo "  </div>\n";
+
+                echo "</div>\n";
+            }
+            echo "\n";
+        ?>
+      <span style="display:block; height: 20px;"></span>
+    </div>
+    <!-- End of Education -->
+
+
+    <span style="display: block; height: 20px;"></span>
 
 
     <!-- Section: Publications -->
     <div class="w3-container w3-card-2 w3-white">
         <h2 class="<?php echo $color_icon; ?> w3-padding-16"><i class="fa fa-file-text-o fa-fw w3-margin-right w3-xxlarge <?php echo $color_icon; ?>"></i>Publications</h2>
+        <hr>
         <table class="w3-table w3-striped">
         <!-- Rows -->
         <?php
@@ -117,13 +166,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                 echo "<br>\n";
                 echo "<b style='font-size:1.1em'>\n";
                 if (!is_null($pdf))
-                    echo "<a href='$pdf' target='_blank' class='$color_url'>\nPaper\n<i class='fa fa-external-link-square fa-fw w3-margin-right'></i>\n</a>\n";
+                    echo "<a href='$pdf' target='_blank' class='$color_url'>\nPaper<i class='fa fa-external-link-square fa-fw w3-margin-right'></i>\n</a>\n";
                 if (!is_null($slides))
-                    echo "<a href='$slides' target='_blank' class='$color_url'>\nSlides\n<i class='fa fa-external-link-square fa-fw w3-margin-right'></i>\n</a>\n";
+                    echo "<a href='$slides' target='_blank' class='$color_url'>\nSlides<i class='fa fa-external-link-square fa-fw w3-margin-right'></i>\n</a>\n";
                 if (!is_null($video))
-                    echo "<a href='$video' target='_blank' class='$color_url'>\nPresentation\n<i class='fa fa-external-link-square fa-fw w3-margin-right'></i>\n</a>\n";
+                    echo "<a href='$video' target='_blank' class='$color_url'>\nPresentation<i class='fa fa-external-link-square fa-fw w3-margin-right'></i>\n</a>\n";
                 if (!is_null($ieee))
-                    echo "<a href='$ieee' target='_blank' class='$color_url'>\nIEEE\n<i class='fa fa-external-link-square fa-fw w3-margin-right'></i>\n</a>\n";
+                    echo "<a href='$ieee' target='_blank' class='$color_url'>\nIEEE<i class='fa fa-external-link-square fa-fw w3-margin-right'></i>\n</a>\n";
                 echo "</b>\n";
                 // end the row
                 echo "</td>\n";
