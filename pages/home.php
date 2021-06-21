@@ -85,11 +85,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                 echo "\n<hr>\n";
                 echo "\n<div class='w3-row'>\n";
 
-                echo "  <div class='w3-container w3-col' style='width:200px'>\n";
-                echo "    <img src='$logo' class='w3-image'>\n";
+                echo "  <div class='w3-col w3-container w3-center  w3-hide-small' style='width:200px'>\n";
+                echo "    <img src='$logo' class='w3-image' style=''>\n";
                 echo "  </div>\n";
 
-                echo "  <div class='w3-container w3-rest'>\n";
+                echo "  <div class='w3-col w3-container w3-center w3-hide-large w3-hide-medium'>\n";
+                echo "    <img src='$logo' class='w3-image' style='width:200px'>\n";
+                echo "  </div>\n";
+
+
+                echo "  <div class='w3-col w3-container l9 m9'>\n";
                 echo "    <h5 class=''><b>$inst</b>\n";
                 echo "    <a href='$instUrl' target='_blank'><i class='fa fa-external-link-square fa-fw w3-margin-right $color_icon'></i></a></h5>\n";
                 echo "    <h6 class='$color_icon'><i class='fa fa-calendar fa-fw w3-margin-right'></i>$start - $end</h6>\n";
