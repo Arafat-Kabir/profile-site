@@ -26,9 +26,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
     <!-- Section: About -->
     <!-- The Grid -->
-    <div class="w3-row-padding w3-container w3-card-2 w3-white">
+    <div class="w3-row w3-container w3-card-2 w3-white">
         <!-- Left Column -->
-        <div class="w3-third" style="margin-top: 20px">
+        <div class="w3-third" style="margin-top: 15px">
             <div class="w3-display-container">
                 <img src="pages/data/pro.jpg" style="width:100%" alt="Avatar">
             </div>
@@ -61,12 +61,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <!-- End of About -->
 
 
-    <span style="display: block; height: 20px;"></span>
+    <span style="display: block; height: <?php echo $gap_section;?>;"></span>
 
 
     <!-- Section: Education -->
     <div class="w3-container w3-card-2 w3-white">
-        <h2 class="<?php echo $color_icon; ?> w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge <?php echo $color_icon; ?>"></i>Education</h2>
+        <h2 class="<?php echo $color_icon; ?> w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge <?php echo $color_icon; ?>"></i>Education</h2>
         <?php
             $myfile  = fopen($path_eduJson, "r") or die("Unable to open file: $path_pubJson!");
             $jsonEdu = fread($myfile,filesize($path_eduJson));
@@ -112,12 +112,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <!-- End of Education -->
 
 
-    <span style="display: block; height: 20px;"></span>
+    <span style="display: block; height: <?php echo $gap_section;?>;"></span>
 
 
     <!-- Section: Publications -->
     <div class="w3-container w3-card-2 w3-white">
-        <h2 class="<?php echo $color_icon; ?> w3-padding-16"><i class="fa fa-file-text-o fa-fw w3-margin-right w3-xxlarge <?php echo $color_icon; ?>"></i>Publications</h2>
+        <h2 class="<?php echo $color_icon; ?> w3-padding-16"><i class="fa fa-file-text fa-fw w3-margin-right w3-xxlarge <?php echo $color_icon; ?>"></i>Publications</h2>
         <hr>
         <table class="w3-table w3-striped">
         <!-- Rows -->
@@ -190,12 +190,42 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     </div>
     <!-- End of Publications -->
 
+
+    <span style="display: block; height: <?php echo $gap_section;?>;"></span>
+
+
+    <!-- Section: Professional Experience -->
+    <div class="w3-container w3-card-2 w3-white">
+        <h2 class="<?php echo $color_icon; ?> w3-padding-16"><i class="fa fa-institution fa-fw w3-margin-right w3-xxlarge <?php echo $color_icon; ?>"></i>Professional Experience</h2>
+        <?php
+            $counter = 0;
+            foreach ($paths_profEx as $sec) {
+                if($counter%2==0) {
+                    echo "\n<div class='w3-row w3-margin-bottom'> <!-- Row start -->\n\n";
+                }
+                $counter++;
+                echo "<div class='w3-container w3-half'>\n";
+                include $sec;
+                echo "</div>\n\n";
+                if($counter%2==0) {
+                    echo "</div> <!-- Row end -->\n\n";
+                }
+            }
+            if($counter%2!=0) {
+                echo "</div> <!-- Row end -->\n\n";
+            }
+        ?>
+    </div>
+    <!-- End of Professional Experience -->
+
+
 </div>
 <!-- End of Page Container -->
 
+<span style="display: block; height: <?php echo $gap_section;?>;"></span>
 
 <!-- Footer -->
-<footer class="w3-container w3-center w3-margin-top <?php echo $color_topBar?>">
+<footer class="w3-container w3-center <?php echo $color_topBar?>">
   <p>Find me on social media.</p>
   <!--a href="https://www.facebook.com/solarcentre" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a> &nbsp;&nbsp; -->
   <a href="https://www.youtube.com/channel/UCm_7d9JrO9a4pO0LUpx-sNw" target="_blank"><i class="fa fa-youtube-play w3-hover-opacity"></i></a>
