@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88"><path d="m0 12.402 35.687-4.8602.0156 34.423-35.67.20313zm35.67 33.529.0277 34.453-35.67-4.9041-.002-29.78zm4.3261-39.025 47.318-6.906v41.527l-47.318.37565zm47.329 39.349-.0111 41.34-47.318-6.6784-.0663-34.739z" fill="#00adef"/><style id="stylish-4" class="stylish" type="text/css">/******************************************/
+/************* Arch Linux KISS ************/
+/*********** Created by: tjwoosta *********/
+/******************************************/
+
+/*******************************************
+ 
+To change the colors of this style use your
+text editors global search and replace
+feature to replace the following colors.
+
+#262626 (background color)
+#3e3e3e (border color)
+#8a8a8a (text color)
+#a7a15e
+#a67b07
+#556b2f
+#af5f00
+#705b46
+#f0e68c
+#7b3303
+
+********************************************/
+
+
+@namespace url(http://www.w3.org/1999/xhtml);</style></svg>

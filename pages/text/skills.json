@@ -1,0 +1,49 @@
+{
+"Programming Languages": [
+    "Assembly",
+    "Verilog HDL",
+    "C/C++",
+    "CUDA C",
+    "C#",
+    "Python",
+    "Visual Basic .NET",
+    "Matlab/GNU Octave"
+],
+ 
+"Scripting Languages": [
+    "Linux/Unix Bash",
+    "Tcl",
+    "JavaScript",
+    "PHP",
+    "HTML",
+    "CSS",
+    "DOS batch script"
+],
+
+"Design and Simulation" : [
+    "Cadence Innovus",
+    "Cadence Spectre",
+    "Synopsys Design Compiler",
+    "Synopsys PrimeTime",
+    "ModelSim from Mentor Graphics",
+    "PSPICE, LTSPICE, HSPICE",
+    "Quartus"
+],
+
+"Design and Simulation1" : [
+    "Cadence Innovus",
+    "Cadence Spectre",
+    "Synopsys Design Compiler",
+    "Synopsys PrimeTime",
+    "ModelSim from Mentor Graphics",
+    "PSPICE, LTSPICE, HSPICE",
+    "Quartus"
+],
+
+"Operating Systems" : [
+    "<img src='pages/data/os-logos/archlinux.svg' style='height: 1.5em;'>\n&nbsp; Arch Linux",
+    "<img src='pages/data/os-logos/debian.svg' style='height: 1.5em;'>\n&nbsp; Debian Linux",
+    "<img src='pages/data/os-logos/ubuntu-inverse.svg' style='height: 1.5em;'>\n&nbsp; Ubuntu"
+]
+
+}

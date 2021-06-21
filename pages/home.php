@@ -197,22 +197,65 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <!-- Section: Professional Experience -->
     <div class="w3-container w3-card-2 w3-white">
         <h2 class="<?php echo $color_icon; ?> w3-padding-16"><i class="fa fa-institution fa-fw w3-margin-right w3-xxlarge <?php echo $color_icon; ?>"></i>Professional Experience</h2>
+        <hr>
         <?php
             $counter = 0;
+            $subBlocks = 2;
             foreach ($paths_profEx as $sec) {
-                if($counter%2==0) {
+                if($counter%$subBlocks==0) {
                     echo "\n<div class='w3-row w3-margin-bottom'> <!-- Row start -->\n\n";
                 }
                 $counter++;
                 echo "<div class='w3-container w3-half'>\n";
                 include $sec;
                 echo "</div>\n\n";
-                if($counter%2==0) {
+                if($counter%$subBlocks==0) {
                     echo "</div> <!-- Row end -->\n\n";
                 }
             }
-            if($counter%2!=0) {
+            if($counter%$subBlocks!=0) {
                 echo "</div> <!-- Row end -->\n\n";
+            }
+        ?>
+    </div>
+    <!-- End of Professional Experience -->
+
+
+    <span style="display: block; height: <?php echo $gap_section;?>;"></span>
+
+
+    <!-- Section: Technical Skills -->
+    <div class="w3-container w3-card-2 w3-white">
+        <h2 class="<?php echo $color_icon; ?> w3-padding-16"><i class="fa fa-cogs fa-fw w3-margin-right w3-xxlarge <?php echo $color_icon; ?>"></i>Technical Skills</h2>
+        <hr>
+        <?php
+            $myfile  = fopen($path_skillJson, "r") or die("Unable to open file: $path_skillJson!");
+            $jsonSkill = fread($myfile,filesize($path_skillJson));
+            $skills  = json_decode($jsonSkill, true);
+            $counter = 0;
+            $subBlocks = 3;
+            foreach($skills as $skillName=>$skillList) {
+                // Row End
+                if($counter%$subBlocks==0) {
+                    echo "\n<div class='w3-row w3-margin-bottom'> <!-- Row start -->\n";
+                }
+                $counter++;
+                // Write each sub-section
+                echo "\n<div class='w3-container w3-third'>\n";
+                echo "  <h4 class='$color_icon'>$skillName</h4>\n";
+                echo "  <ul class='w3-ul'>\n";
+                foreach($skillList as $item) {
+                    echo "    <li>$item</li>\n";
+                }
+                echo "  </ul>\n";
+                echo "</div>\n";
+                // Row End
+                if($counter%$subBlocks==0) {
+                    echo "\n</div> <!-- Row end -->\n";
+                }
+            }
+            if($counter%$subBlocks!=0) {
+                echo "\n</div> <!-- Row end -->\n\n";
             }
         ?>
     </div>
