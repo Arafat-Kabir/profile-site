@@ -1,4 +1,5 @@
 {
+
 "Programming Languages": [
     "Assembly",
     "Verilog HDL",
@@ -26,24 +27,44 @@
     "Synopsys Design Compiler",
     "Synopsys PrimeTime",
     "ModelSim from Mentor Graphics",
+    "Calibre from Mentor Graphics",
     "PSPICE, LTSPICE, HSPICE",
     "Quartus"
 ],
 
-"Design and Simulation1" : [
-    "Cadence Innovus",
-    "Cadence Spectre",
-    "Synopsys Design Compiler",
-    "Synopsys PrimeTime",
-    "ModelSim from Mentor Graphics",
-    "PSPICE, LTSPICE, HSPICE",
-    "Quartus"
+"Graphics and Typesetting" : [
+    "Latex",
+    "OpenGL, GLSL",
+    "Processing",
+    "SFML",
+    "Blender",
+    "PhotoShop, GIMP",
+    "MS Visio",
+    "Inkscape"
+],
+
+"Embedded System and Prototyping" : [
+    "Micro-Controller",
+    "Arduino",
+    "Raspberry Pi",
+    "Proteus Design Suite",
+    "Atmel Studio",
+    "Eagle PCB Design Software"
 ],
 
 "Operating Systems" : [
     "<img src='pages/data/os-logos/archlinux.svg' style='height: 1.5em;'>\n&nbsp; Arch Linux",
     "<img src='pages/data/os-logos/debian.svg' style='height: 1.5em;'>\n&nbsp; Debian Linux",
     "<img src='pages/data/os-logos/ubuntu-inverse.svg' style='height: 1.5em;'>\n&nbsp; Ubuntu"
+],
+
+"Others" : [
+    "Microsoft Office",
+    "MySQL",
+    "MS Excel",
+    "Git",
+    "Vim"
 ]
+
 
 }
