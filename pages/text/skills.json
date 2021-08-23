@@ -53,6 +53,8 @@
 ],
 
 "Operating Systems" : [
+    "<img src='pages/data/os-logos/windows.svg' style='height: 1.5em;'>\n&nbsp; Windows 7/8/10",
+    "<img src='pages/data/os-logos/redhat.svg' style='height: 1.5em;'>\n&nbsp; RHEL",
     "<img src='pages/data/os-logos/archlinux.svg' style='height: 1.5em;'>\n&nbsp; Arch Linux",
     "<img src='pages/data/os-logos/debian.svg' style='height: 1.5em;'>\n&nbsp; Debian Linux",
     "<img src='pages/data/os-logos/ubuntu-inverse.svg' style='height: 1.5em;'>\n&nbsp; Ubuntu"

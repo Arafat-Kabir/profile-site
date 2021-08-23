@@ -62,5 +62,23 @@ for low-power heterogeneous systems.
 //always looking for opportunities to broaden his <b>mind and knowledge</b>.
 //</p>
 ?>
+
+
+<div class='w3-container'>
+  <h4 class='<?php echo $color_icon?>'>Scholarships and Awards</h4>
+  <ul class='w3-ul'>
+    <li>Doctoral Academy Fellowship, University of Arkansas</li>
+    <li>Dean's List Award, BUET</li>
+    <li>University Merit Scholarship, BUET</li>
+    <li>Best Academic Award 2009, Rajshahi Cadet College (1st position)</li>
+    <li>Amrai Shera 2012, Champion Group</li>
+    <li>Amrai Shera 2012, merit position-3rd</li>
+    <li>5th in International Robotics Challenge Bangladesh round, 2014</li>
+    <li>Technical Scholarship, BUET</li>
+    <li>H.S.C Board Scholarship, Rajshahi Board</li>
+    <li>S.S.C Board Scholarship, Rajshahi Board</li>
+  </ul>
+</div>
+
 <br>
 <!-- Text Stop -->

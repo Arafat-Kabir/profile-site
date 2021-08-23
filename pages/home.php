@@ -57,6 +57,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                 </div>
             </div>
         </div>
+
+        <!-- Link buttons -->
+        <div class="w3-bar w3-center">
+            <a href="./" style="font-weight: bold" class="w3-button w3-mobile <?php echo "$color_url $color_urlHover";?>">Download Complete CV</a>
+            <a href="./" style="font-weight: bold" class="w3-button w3-mobile <?php echo "$color_url $color_urlHover";?>">E3DA Lab Website</a>
+            <a href="./" style="font-weight: bold" class="w3-button w3-mobile <?php echo "$color_url $color_urlHover";?>">GitHub Profile</a>
+            <a href="./" style="font-weight: bold" class="w3-button w3-mobile <?php echo "$color_url $color_urlHover";?>">Youtube Channel</a>
+        </div>
+        <!-- End Link buttons -->
+        <span style="display: block; height: 15px ;"></span>
     </div>
     <!-- End of About -->
 
