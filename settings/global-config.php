@@ -4,6 +4,7 @@ $path_pages     = 'pages';           // contains all pages source
 $path_pubJson   = 'pages/text/publications.json';    // contains the publications
 $path_eduJson   = 'pages/text/education.json';       // contains the educational inst. information
 $path_skillJson = 'pages/text/skills.json';         // contains dictionary of skills list 
+$path_mentors   = 'pages/text/mentors.json';         // contains dictionary of skills list 
 
 $paths_profEx   = array("pages/text/prof-bu.php","pages/text/prof-neural.php");
 

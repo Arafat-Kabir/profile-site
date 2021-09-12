@@ -271,6 +271,56 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     </div>
     <!-- End of Technical Skills -->
 
+    <span style="display: block; height: <?php echo $gap_section;?>;"></span>
+
+    <!-- Section: References -->
+    <div class="w3-container w3-card-2 w3-white">
+        <h2 class="<?php echo $color_icon; ?> w3-padding-16"><i class="fa fa-users fa-fw w3-margin-right w3-xxlarge <?php echo $color_icon; ?>"></i>Academic Advisors</h2>
+        <hr>
+        <?php
+            $myfile    = fopen($path_mentors, "r") or die("Unable to open file: $path_mentors!");
+            $jsonMent  = fread($myfile,filesize($path_mentors));
+            $arrMent   = json_decode($jsonMent, true);
+            $lstCount = count($arrMent);    // start at +1
+
+            $counter = 0;
+            $subBlocks = 2;
+            foreach ($arrMent as $ment) {
+                $relation = $ment['relation'];
+                $name     = $ment['name'];
+                $image    = $ment['image'];
+                $urls     = $ment['urls'];
+                $desc     = implode("<br>\n      ", $ment['desc']);
+                if($counter%$subBlocks==0) {
+                    echo "\n<div class='w3-row w3-margin-bottom'> <!-- Row start -->\n\n";
+                }
+                $counter++;
+                echo "<div class='w3-container w3-half'>\n";
+                echo "  <div class='w3-container w3-quarter'>\n";
+	            echo "    <img src='$image' alt='Avatar' style='width:100%'>\n";
+                echo "  </div>\n";
+                echo "  <div class='w3-container w3-threequarter'>\n";
+                echo "    <h5 class='w3-opacity'><b>$relation</b></h5>\n";
+                echo "    <p>\n";
+                echo "      <b style='font-size:1.15em'>$name</b><br>\n";
+                echo "      $desc<br>\n";
+                foreach ($urls as $key=>$link) {
+                    echo "      <a href='$link' target='_blank' style='text-decorate:none;'  class='w3-text-blue'>$key<i class='fa fa-external-link-square fa-fw w3-margin-right w3-text-blue'></i></a>\n";
+                    echo "      <br>\n";
+                }
+                echo "    </p>\n";
+                echo "  </div>\n";
+                echo "</div>\n\n";
+                if($counter%$subBlocks==0) {
+                    echo "</div> <!-- Row end -->\n\n";
+                }
+            }
+            if($counter%$subBlocks!=0) {
+                echo "</div> <!-- Row end -->\n\n";
+            }
+        ?>
+    </div>
+    <!-- End of References -->
 
 </div>
 <!-- End of Page Container -->

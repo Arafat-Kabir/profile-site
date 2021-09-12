@@ -1,0 +1,57 @@
+[
+
+{
+    "relation": "Doctoral Advisor",
+    "name"    : "Dr. Yarui Peng",
+    "image"   : "pages/data/Dr.Peng.jpg",
+    "desc"    : [
+        "Assistant Professor, Department of Computer Science & Computer Engineering",
+        "University of Arkansas, Fayetteville",
+        "Cell Phone: +1 479-575-6043",
+        "e-mail: yrpeng@uark.edu"
+	],
+    "urls"    : {
+        "University Faculty Profile" : "https://engineering.uark.edu/directory/index/uid/yrpeng/name/Yarui+Peng/",
+        "Website" : "https://e3da.csce.uark.edu/"
+
+    }
+},
+
+{
+    "relation": "Undergraduate Advisor",
+    "name"    : "Dr. Samia Subrina",
+    "image"   : "pages/data/Dr.Samia.jpg",
+    "desc"    : [
+        "Professor, Department of Electrical and Electronic Engineering",
+        "Bangladesh University of Engineering and Technology",
+        "Cell Phone: +8801937959083",
+        "e-mail: samiasubrina@eee.buet.ac.bd"
+	],
+    "urls"    : {
+        "University Faculty Profile" : "https://eee.buet.ac.bd/faculty/details/dr-samia-subrina",
+        "Website" : "http://samiasubrina.buet.ac.bd/"
+
+    }
+},
+
+
+{
+    "relation": "Undergraduate Thesis Supervisor",
+    "name"    : "Dr. A. B. M. Harun-Ur-Rashid",
+    "image"   : "pages/data/Dr.Harun.jpg",
+    "desc"    : [
+        "Professor, Department of Electrical and Electronic Engineering",
+        "Bangladesh University of Engineering and Technology",
+        "Cell Phone: +8801710852886",
+        "e-mail: abmhrashid@eee.buet.ac.bd"
+	],
+    "urls"    : {
+        "University Faculty Profile" : "https://eee.buet.ac.bd/faculty/details/dr-a-b-m-harun-ur-rashid",
+        "Website" : "http://abmhrashid.buet.ac.bd/"
+
+    }
+}
+
+
+
+]
